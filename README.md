@@ -1,10 +1,10 @@
-# Minikube_Kubernets_Deployment
 
-#Assignment - Scalable Services - Deployment - Minikube , Kubernets
+####Assignment - Scalable Services - Deployment - Minikube , Kubernets####
+ (Module - Deployment via Minikube, Kubernets: Author - Pamuru KesavaKumar, BITS ID - 2020mt93550)
 
 List of Services 	
 1. Book Service - Python, Flask, Sqlite3
-2. Inventaory Service  - Django, Python, SQLite3
+2. Inventory Service  - Django, Python, SQLite3
 3. Student Service - Node Js, Javascript, Npm, Mongo DB
 4. Library Service - Maven Java, MySQL, Rabbit MQ	
 5. Notification - - Maven Java, Rabbit MQ
@@ -18,6 +18,8 @@ Mevan Java https://github.com/singhTarunPal/libraryService
 Mevan Java https://github.com/singhTarunPal/notificationService
    Dependency - Rabbit MQ
 
+****Deployment - Minikube, Kubernets ****
+Deployment - https://github.com/kumarp3451/Minikube_Kubernets_Deployment
 
 
 ********Deployment Steps - Minikube, KuberNets ***********
@@ -32,22 +34,24 @@ Mevan Java https://github.com/singhTarunPal/notificationService
 	
 		"Deployment"—configured and operational resources. Deployments are the overall processes that enable you to orchestrate your resources.
 		"ReplicaSet"—sets of pods that provide the resources for your services.
-		"Pod"—a unit that contains one or more containers along with attached storage resources, and configuration definitions. Pods are grouped together in ReplicaSets 
-    and all pods in a set run the same container images.
-		"Node cluster"—control plane and worker nodes that each contain one or more pods. The workers run your workloads and the control plane orchestrates the workers 
-     together. This is what is created by Minikube.
-		"Node processes"—the various components that you use to connect and manage Kubernetes. Control plane processes include API servers, ectd, Scheduler, kube-
-     controller-manager, and cloud-controller-manager. Worker processes include kubelet, kube-proxy, and your container runtime.
+		"Pod"—a unit that contains one or more containers along with attached storage resources, and configuration definitions. Pods are grouped together in 
+		 ReplicaSets and all pods in a set run the same container images.
+		"Node cluster"—control plane and worker nodes that each contain one or more pods. The workers run your workloads and the control plane orchestrates 
+		 the workers together. This is what is created by Minikube.
+		"Node processes"—the various components that you use to connect and manage Kubernetes. Control plane processes include API servers, ectd, Scheduler, 
+		 kube-controller-manager, and cloud-controller-manager. Worker processes include kubelet, kube-proxy, and your container runtime.
 		"Container"—the image you create to hold your applications.
 
 	
 
 #### 1.Book Service Deployment - Flask (Python) ####
 
+# git clone  https://github.com/singhTarunPal/bookService	
+
 #Create YAML file with extenstion as .yaml 
 	deployment.yaml - its configuration file used to deploy api/services in kubernets.
 
-#Build docker application
+#Build the service 
 	docker build -t flask-book-service .
 
 #Check Docker Image is created or not	
@@ -69,10 +73,12 @@ Mevan Java https://github.com/singhTarunPal/notificationService
 
 #### 2.Inventory Service Deployment - Django (Python) ####
 
+# git clone  https://github.com/singhTarunPal/inventoryService	
+
 #Create YAML file with extenstion as .yaml 
 	deployment.yaml - its configuration file used to deploy api/services in kubernets.
 
-#Build docker application
+#Build the service 
 	docker build -t django-inventory-service .
 
 #Check Docker Image is created or not	
@@ -95,12 +101,14 @@ Mevan Java https://github.com/singhTarunPal/notificationService
 	
 	
 	
-#### 3.Student Service Deployment - Node Js, Javascript, Npm (Python) ####
+#### 3.Student Service Deployment - Node Js, Javascript, Npm (Python) 
+
+#git clone https://github.com/GaneshKoushik313/student_records
 
 #Create YAML file with extenstion as .yaml 
 	deployment.yaml - its configuration file used to deploy api/services in kubernets.
 
-#Build docker application
+#Build the service 
 	docker build -t npm-java-student-service .
 
 #Check Docker Image is created or not	
@@ -138,7 +146,3 @@ Minikube delete
 	
 	
 	
-	
-	
-	
-
