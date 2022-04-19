@@ -133,10 +133,13 @@ Deployment - https://github.com/kumarp3451/Minikube_Kubernets_Deployment
 ****Additional Commands ***
 
 Docker Images
+
 docker run -d --name npm-java-student-service -p 8080:5000 npm-java-student-service
 
 kubectl get pods
+
 kubectl get services
+
 kubectl delete deployment <servicename>
 
 Minikube delete
